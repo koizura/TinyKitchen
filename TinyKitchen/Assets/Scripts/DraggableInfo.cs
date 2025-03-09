@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 public class DraggableInfo : MonoBehaviour
@@ -24,9 +26,45 @@ public class DraggableInfo : MonoBehaviour
         if (ingredient.Equals("egg") && itemName.Equals("pan") && containing.Count == 0) {
             return true;
         }
+        // if (.Equals("plate")) {
+
+        // }
         return false;
     }
-    public void Contain(GameObject obj) {
-        containing.Add(obj);
+    public bool MergeInto(GameObject targetObj) {
+        DraggableInfo target = targetObj.GetComponent<DraggableInfo>();
+        if (!target) return false;
+        return MergeInto(target);
     }   
+    public bool MergeInto(DraggableInfo target) {
+        if (!target) return false;
+        GameObject targetObj = target.gameObject;
+        string targetName = target.itemName;
+        
+        if (itemName == "egg" && targetName == "pan") {
+            if (target.containing.Count == 0) {
+                target.containing.Add(gameObject);
+                Destroy(GetComponent<Rigidbody>());
+                transform.SetParent(targetObj.transform);
+                return true;
+            }
+        }
+        if (itemName == "bowl" && targetName == "pan") {
+            DraggableInfo pan = targetObj.GetComponent<DraggableInfo>();
+            if (pan.containing.Count == 0) return false;
+            DraggableInfo panItem = GetInfo(pan.containing[0]);
+            if (panItem.itemName == "cooked egg") {
+                containing.Add(panItem.gameObject);
+                panItem.transform.SetParent(transform);
+                panItem.transform.position = transform.position + Vector3.up * 0.2f;
+                Debug.Log("cooked egg has been plated");
+                return true;
+            }
+        }
+
+        return false;
+    }
+    public DraggableInfo GetInfo(GameObject obj) {
+        return obj.GetComponent<DraggableInfo>();
+    }
 }

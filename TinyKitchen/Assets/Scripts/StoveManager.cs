@@ -12,7 +12,8 @@ public class StoveManager : MonoBehaviour
     public List<GameObject> sprites;
     void Start()
     {
-        
+        activeObjLeft = null;
+        activeObjRight = null;
     }
     public void Detach(GameObject obj) {
         if (obj.Equals(activeObjLeft)) {
@@ -61,19 +62,27 @@ public class StoveManager : MonoBehaviour
             }
             
         }
-        if (activeObjLeft && activeObjLeft.transform.childCount > 0) {
-            
-            DraggableInfo childInfo = activeObjLeft.transform.GetChild(0).gameObject.GetComponent<DraggableInfo>();
-            if (childInfo.itemName.Equals("egg")) {
-                childInfo.cookTimeLeft -= Time.deltaTime; 
-                if (childInfo.cookTimeLeft < 0) {
-                    childInfo.itemName = "cooked egg";
-                    childInfo.gameObject.GetComponent<MeshFilter>().mesh = sprites[0].GetComponent<MeshFilter>().sharedMesh;
-                    childInfo.gameObject.GetComponent<MeshRenderer>().materials = sprites[0].GetComponent<MeshRenderer>().sharedMaterials;
-                }
+
+        Cook(activeObjLeft);
+        Cook(activeObjRight);
+    
+        // Debug.Log((stoveLObj.transform.position - panObj.transform.position).magnitude + ", " + (stoveRObj.transform.position - potObj.transform.position).magnitude);
+    }
+    void Cook(GameObject containerObj) {
+        if (!containerObj) return;
+        DraggableInfo container = containerObj.GetComponent<DraggableInfo>();
+        if (!container) return;
+        if (!(container.gameObject == activeObjLeft || container.gameObject == activeObjRight)) return;
+        if (container.containing.Count == 0) return;
+        DraggableInfo itemCooking = container.containing[0].GetComponent<DraggableInfo>();
+        itemCooking.cookTimeLeft -= Time.deltaTime;
+        if (itemCooking.cookTimeLeft < 0) {
+            if (itemCooking.itemName == "egg") {
+                itemCooking.itemName = "cooked egg";
+                itemCooking.gameObject.GetComponent<MeshFilter>().mesh = sprites[0].GetComponent<MeshFilter>().sharedMesh;
+                itemCooking.gameObject.GetComponent<MeshRenderer>().materials = sprites[0].GetComponent<MeshRenderer>().sharedMaterials;
+                Debug.Log("Egg has been cooked");
             }
         }
-        
-        // Debug.Log((stoveLObj.transform.position - panObj.transform.position).magnitude + ", " + (stoveRObj.transform.position - potObj.transform.position).magnitude);
     }
 }

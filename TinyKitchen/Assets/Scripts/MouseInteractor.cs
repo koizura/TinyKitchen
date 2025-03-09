@@ -50,16 +50,19 @@ public class NewMonoBehaviourScript : MonoBehaviour
             if (isHit) {
                 GameObject objectHit = draggableHit.transform.gameObject;
                 GameObject objectDragged = draggedRigidbody.gameObject;
-                if (stoveManager != null)
-                {
-                    DraggableInfo panInfo = stoveManager.panObj.GetComponent<DraggableInfo>();
-                    if (objectHit.Equals(stoveManager.panObj) && panInfo.CanContain(objectDragged))
-                    {
-                        panInfo.Contain(objectDragged);
-                        Destroy(objectDragged.GetComponent<Rigidbody>());
-                        objectDragged.transform.SetParent(panInfo.transform);
-                    }
+                if (objectHit != objectDragged) {
+                    Debug.Log("Object " + objectDragged.name + " merge into " + objectHit.name);
+                    DraggableInfo draggedInfo = objectDragged.GetComponent<DraggableInfo>();
+                    draggedInfo.MergeInto(objectHit);
                 }
+                // DraggableInfo panInfo = stoveManager.panObj.GetComponent<DraggableInfo>();
+                // if (objectHit.Equals(stoveManager.panObj) && panInfo.CanContain(objectDragged))
+                // {
+                //     panInfo.Contain(objectDragged);
+                //     Destroy(objectDragged.GetComponent<Rigidbody>());
+                //     objectDragged.transform.SetParent(panInfo.transform);
+                // }
+                
             }
             draggedRigidbody = null;
             targetRotation = Vector3.zero;
@@ -109,7 +112,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
                     }
                 }
             }
-            draggedRigidbody.MovePosition(draggedRigidbody.position + 0.2f * (pointer.position - draggedRigidbody.position));
+            draggedRigidbody.MovePosition(draggedRigidbody.position + 0.1f * (pointer.position - draggedRigidbody.position));
             draggedRigidbody.linearVelocity = (target - draggedRigidbody.position) * 10f;
             if (targetRotation != Vector3.zero) {
                 draggedRigidbody.rotation = Quaternion.Lerp(draggedRigidbody.rotation, Quaternion.Euler(targetRotation), 0.1f);
