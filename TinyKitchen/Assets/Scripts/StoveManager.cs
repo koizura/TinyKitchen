@@ -107,14 +107,19 @@ public class StoveManager : MonoBehaviour
             }
             if (itemCooking.itemName == "cutting chicken") {
                 Debug.Log("chicken has been cut");
+                container.containing[1].AddComponent<Rigidbody>();
+                container.containing[1].GetComponent<Rigidbody>().collisionDetectionMode = CollisionDetectionMode.Continuous;
+                container.containing[1].transform.parent = null;
                 Instantiate(sprites[4], itemCooking.transform.position, itemCooking.transform.rotation);
                 Destroy(itemCooking.gameObject);
                 container.containing.Clear();
-                // itemCooking.itemName = "cut chicken";
-                // SwapMesh(itemCooking.gameObject, 4);
-                // itemCooking.gameObject.AddComponent<Rigidbody>();
-                // Destroy(itemCooking.GetComponent<Collider>());
-                // itemCooking.transform.parent = null;
+            }
+            if (itemCooking.itemName == "cut chicken") {
+                Instantiate(sprites[5], itemCooking.transform.position, itemCooking.transform.rotation);
+                Destroy(itemCooking.gameObject);
+                container.containing.Clear();
+
+                Debug.Log("chicken leg has been cooked");
 
             }
         }

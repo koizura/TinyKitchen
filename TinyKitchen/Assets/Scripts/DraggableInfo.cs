@@ -52,6 +52,18 @@ public class DraggableInfo : MonoBehaviour
                 return true;
             }
         }
+
+        if (itemName == "cut chicken" && targetName == "pan") {
+            if (target.containing.Count == 0) {
+                target.containing.Add(gameObject);
+                Destroy(GetComponent<Rigidbody>());
+                // SwapMesh(gameObject, 3);
+                transform.SetParent(targetObj.transform);
+                Debug.Log("chicken on pan");
+                return true;
+            }
+        }
+
         if (itemName == "rice bag" && targetName == "pot") {
             if (target.containing.Count == 0) {
                 itemName = "raw rice";
@@ -87,7 +99,7 @@ public class DraggableInfo : MonoBehaviour
                 return true;
             }
         }
-        if (itemName == "bowl" && (targetName == "pan" || targetName == "pot")) {
+        if ((itemName == "bowl" || itemName.Contains("dish"))&& (targetName == "pan" || targetName == "pot")) {
             DraggableInfo pan = targetObj.GetComponent<DraggableInfo>();
             if (pan.containing.Count == 0) return false;
             DraggableInfo panItem = GetInfo(pan.containing[0]);
@@ -96,18 +108,71 @@ public class DraggableInfo : MonoBehaviour
                 panItem.transform.SetParent(transform);
                 panItem.transform.position = transform.position + Vector3.up * 0.2f;
                 Debug.Log("cooked egg has been plated");
-                return true;
             }
             if (panItem.itemName == "cooked rice") {
                 containing.Add(panItem.gameObject);
                 panItem.transform.SetParent(transform);
                 panItem.transform.position = transform.position + Vector3.up * 0.1f;
                 Debug.Log("cooked rice has been plated");
-                return true;
             }
+            if (panItem.itemName == "chicken leg") {
+                containing.Add(panItem.gameObject);
+                panItem.transform.SetParent(transform);
+                panItem.transform.position = transform.position + Vector3.up * 0.1f;
+                Debug.Log("cooked rice has been plated");
+            }
+            foreach(Transform child in transform) {
+                child.gameObject.SetActive(false);
+            }
+            string dishName = CalculateDish();
+            List<GameObject> sprites = GameObject.Find("StoveManager").GetComponent<StoveManager>().sprites;
+
+            if (dishName == "chicken dish") {
+                GameObject obj = Instantiate(sprites[9], transform.position, transform.rotation);
+                obj.transform.SetParent(transform);
+            }
+            if (dishName == "egg dish") {
+                GameObject obj = Instantiate(sprites[8], transform.position, transform.rotation);
+                obj.transform.SetParent(transform);
+
+            }
+            if (dishName == "rice dish") {
+                GameObject obj = Instantiate(sprites[6], transform.position, transform.rotation);
+                obj.transform.SetParent(transform);
+            }
+            if (dishName == "rice chicken dish") {
+                GameObject obj = Instantiate(sprites[7], transform.position, transform.rotation);
+                obj.transform.SetParent(transform);
+            }
+            if (dishName == "garbage") {
+                GameObject obj = Instantiate(sprites[10], transform.position, transform.rotation);
+                obj.transform.SetParent(transform);
+            }
+            itemName = dishName;
         }
 
         return false;
+    }
+    public string CalculateDish() {
+        bool chicken = false, egg = false, rice = false;
+        foreach(GameObject obj in containing) {
+            DraggableInfo info = obj.GetComponent<DraggableInfo>();
+            if (info.itemName == "chicken leg") chicken = true;
+            if (info.itemName == "cooked egg") egg = true;
+            if (info.itemName == "cooked rice") rice = true;
+        }
+        if (chicken && egg && rice) {
+
+        } else if (chicken && !egg && !rice) {
+            return "chicken dish";
+        } else if (!chicken && egg && !rice) {
+            return "egg dish";
+        } else if (!chicken && !egg && rice) {
+            return "rice dish";
+        } else if (chicken && !egg && rice) {
+            return "rice chicken dish";
+        }
+        return "garbage";
     }
     public DraggableInfo GetInfo(GameObject obj) {
         return obj.GetComponent<DraggableInfo>();

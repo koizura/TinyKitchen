@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430417886937755246}
-  m_Layer: 0
+  - component: {fileID: 2316586587616379367}
+  m_Layer: 6
   m_Name: Chicken and Rice Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,6 +35,27 @@ Transform:
   - {fileID: 7148872953178725093}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2316586587616379367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951310238297550164}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5508647, y: 0.4799, z: 2.4888}
+  m_Center: {x: -0.377887, y: -0.26005, z: 0.7444}
 --- !u!1001 &386540647887247521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42,9 +64,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 430417886937755246}
     m_Modifications:
+    - target: {fileID: 1415721191874626870, guid: 87a51242819fd47429e4d31c645304d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2635307661363329423, guid: 87a51242819fd47429e4d31c645304d1, type: 3}
       propertyPath: m_Name
       value: Rice (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635307661363329423, guid: 87a51242819fd47429e4d31c645304d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3447979368291066677, guid: 87a51242819fd47429e4d31c645304d1, type: 3}
       propertyPath: m_LocalScale.x
@@ -119,6 +149,10 @@ PrefabInstance:
     - target: {fileID: 7275765993181287031, guid: bf3b5c8ced1eaa6409335a70c6c9ec49, type: 3}
       propertyPath: m_Name
       value: plate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275765993181287031, guid: bf3b5c8ced1eaa6409335a70c6c9ec49, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8048889332007717069, guid: bf3b5c8ced1eaa6409335a70c6c9ec49, type: 3}
       propertyPath: m_LocalPosition.x

@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3703806336963363134}
-  m_Layer: 0
+  - component: {fileID: 4603060769307646661}
+  m_Layer: 6
   m_Name: Chicken Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,6 +34,27 @@ Transform:
   - {fileID: 8764988760488649516}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4603060769307646661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029880004626272708}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.496973, y: 0.5444248, z: 2.3924122}
+  m_Center: {x: 0.02072525, y: 0.062463164, z: 0.3800106}
 --- !u!1001 &1376474717149431693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45,13 +67,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate
       objectReference: {fileID: 0}
+    - target: {fileID: 7275765993181287031, guid: bf3b5c8ced1eaa6409335a70c6c9ec49, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8048889332007717069, guid: bf3b5c8ced1eaa6409335a70c6c9ec49, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09869909
       objectReference: {fileID: 0}
     - target: {fileID: 8048889332007717069, guid: bf3b5c8ced1eaa6409335a70c6c9ec49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.49991822
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 8048889332007717069, guid: bf3b5c8ced1eaa6409335a70c6c9ec49, type: 3}
       propertyPath: m_LocalPosition.z
@@ -109,11 +135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1413025535600590047, guid: de602d22e1f56904baf06f909f100ad0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.30991817
       objectReference: {fileID: 0}
     - target: {fileID: 1413025535600590047, guid: de602d22e1f56904baf06f909f100ad0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 1413025535600590047, guid: de602d22e1f56904baf06f909f100ad0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -147,7 +173,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: chicken sliced cooked
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -817861438815524772, guid: de602d22e1f56904baf06f909f100ad0, type: 3}
+    - {fileID: -4306964279926115121, guid: de602d22e1f56904baf06f909f100ad0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
