@@ -6,7 +6,7 @@ using UnityEngine;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     public Transform pointer; // TEST pointer
-    private Rigidbody draggedRigidbody; // Rigidbody of the object being dragged  
+    public Rigidbody draggedRigidbody; // Rigidbody of the object being dragged  
     private Vector3 targetRotation;
     public StoveManager stoveManager;
 
@@ -17,7 +17,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private InteractShading targetInteractShading;
     void Start()
     {
-        
+        draggedRigidbody = null;
     }
 
     void Update()

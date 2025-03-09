@@ -109,6 +109,7 @@ public class StoveManager : MonoBehaviour
                 Debug.Log("chicken has been cut");
                 Instantiate(sprites[4], itemCooking.transform.position, itemCooking.transform.rotation);
                 Destroy(itemCooking.gameObject);
+                container.containing.Clear();
                 // itemCooking.itemName = "cut chicken";
                 // SwapMesh(itemCooking.gameObject, 4);
                 // itemCooking.gameObject.AddComponent<Rigidbody>();
