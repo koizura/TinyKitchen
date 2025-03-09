@@ -62,6 +62,7 @@ public class StoveManager : MonoBehaviour
             
         }
         if (activeObjLeft && activeObjLeft.transform.childCount > 0) {
+            
             DraggableInfo childInfo = activeObjLeft.transform.GetChild(0).gameObject.GetComponent<DraggableInfo>();
             if (childInfo.itemName.Equals("egg")) {
                 childInfo.cookTimeLeft -= Time.deltaTime; 
