@@ -13,6 +13,10 @@ public class FlipCookbook : MonoBehaviour
 
     [SerializeField]
     private Animator animator;
+    [SerializeField]
+    private GameObject cookbookObj;
+    [SerializeField]
+    private float force;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +32,7 @@ public class FlipCookbook : MonoBehaviour
             bool isHit = Physics.Raycast(mouseRay.origin, mouseRay.direction, out RaycastHit draggableHit, 20.0f);
             if (isHit && (draggableHit.transform.gameObject != gameObject && draggableHit.transform.gameObject != leftPage && draggableHit.transform.gameObject != rightPage))
             {
-                CloseBook();
+                animator.Play("Base Layer.Close");
             }
         }
     }
@@ -55,6 +59,8 @@ public class FlipCookbook : MonoBehaviour
 
     public void CloseBook()
     {
+        GameObject cookbook = Instantiate(cookbookObj, transform);
+        cookbook.GetComponent<Rigidbody>().AddForce(transform.up * force, ForceMode.Impulse);
         Destroy(gameObject);
     }
 }

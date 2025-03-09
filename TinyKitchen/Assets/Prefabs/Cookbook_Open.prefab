@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8085064622241841527, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -285,6 +289,8 @@ MonoBehaviour:
   leftPage: {fileID: 3699379580518288753}
   rightPage: {fileID: 4155707993057432540}
   animator: {fileID: 8441876718446980820}
+  cookbookObj: {fileID: 7397029891999629088, guid: 62c353e7eebcda94a9c000fda71c9764, type: 3}
+  force: 0
 --- !u!95 &8441876718446980820
 Animator:
   serializedVersion: 7
