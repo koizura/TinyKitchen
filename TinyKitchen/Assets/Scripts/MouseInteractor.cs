@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class MouseInteractor : MonoBehaviour
 {
     public Transform pointer; // TEST pointer
     public Rigidbody draggedRigidbody; // Rigidbody of the object being dragged  
