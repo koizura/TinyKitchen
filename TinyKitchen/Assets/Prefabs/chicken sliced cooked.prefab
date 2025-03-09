@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1447531528723241780
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30.163332
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30.163332
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30.163332
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.56992
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ca5f8d3c3aef8ea46b4bfeb6fc8ca420, type: 2}
+    - target: {fileID: 919132149155446097, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}
+      propertyPath: m_Name
+      value: chicken sliced cooked
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4467fc7510ddf4489a0d2b45386fe2d, type: 3}

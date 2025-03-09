@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Kitchen_Tool_Plate.ma
-//Last modified: Sat, Mar 08, 2025 07:17:17 PM
+//Last modified: Sat, Mar 08, 2025 07:21:08 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -12,17 +12,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "43252012-4578-154A-CFC0-8EB42734A952";
+fileInfo "UUID" "D4DF1A58-47BB-E8C0-9AC8-7ABE13D3FF87";
 createNode transform -s -n "persp";
 	rename -uid "84C0B97C-4D48-F2A6-348C-598A409634B0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28.656577855602073 22.758943921976051 -23.77665941646082 ;
+	setAttr ".t" -type "double3" 34.398930615541978 27.053908025362013 -28.629323734632528 ;
 	setAttr ".r" -type "double3" -29.73835272895899 -1309.8000000000723 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B91FAEE3-4F31-0560-6051-04AE4DE5D447";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 43.387656920583161;
+	setAttr ".coi" 52.046160420254452;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -724,9 +724,6 @@ createNode polyBevel3 -n "polyBevel1";
 	setAttr ".mv" yes;
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "7147D235-4F9B-648E-DB52-5C91B450F93B";
-	setAttr ".sst" -type "string" "";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "60C3FBCA-4505-F811-CDF3-7588D9CB5623";
 	setAttr ".b" -type "string" (
@@ -778,6 +775,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "8D9125FF-43AB-77A7-F3A9-5FB45F4CC2B2";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "26B4EB98-4EB8-5A63-E812-E39EEA0D0DDF";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;

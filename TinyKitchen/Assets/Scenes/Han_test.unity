@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 729600190}
   - component: {fileID: 729600189}
   - component: {fileID: 729600188}
+  - component: {fileID: 729600192}
   m_Layer: 0
   m_Name: TestSphere
   m_TagString: Untagged
