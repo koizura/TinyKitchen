@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.79999995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.79999995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.79999995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -132,6 +132,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2456323810049640332}
   m_SourcePrefab: {fileID: 100100000, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
+--- !u!23 &2025123155335240459 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4738984208643598611, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
+  m_PrefabInstance: {fileID: 6764107299013259800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3699379580518288753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1258692457480077463, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
@@ -285,12 +290,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pageIndex: 0
   pageCount: 4
-  sprites: []
+  sprites:
+  - {fileID: 2800000, guid: 1d8d590cd969f4e4891f731573299d48, type: 3}
+  - {fileID: 2800000, guid: f1c2469f11909ec4c88aa1d47993ee34, type: 3}
+  - {fileID: 2800000, guid: fd3d10b4112515147935c6eaf3a1c2cd, type: 3}
+  - {fileID: 2800000, guid: dff7f5d24a2918f45a04e7d57c9a9d9a, type: 3}
   leftPage: {fileID: 3699379580518288753}
   rightPage: {fileID: 4155707993057432540}
+  leftBottomRenderer: {fileID: 6163224854263066984}
+  rightBottomRenderer: {fileID: 2025123155335240459}
   animator: {fileID: 8441876718446980820}
-  cookbookObj: {fileID: 7397029891999629088, guid: 62c353e7eebcda94a9c000fda71c9764, type: 3}
-  force: 0
+  cookbookObj: {fileID: 8815162073528018805, guid: 878543f4fe72554408eb18a9fe1f7056, type: 3}
+  force: 30
 --- !u!95 &8441876718446980820
 Animator:
   serializedVersion: 7
@@ -334,3 +345,8 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.9237347, y: 1.2030317, z: 11.25967}
   m_Center: {x: 0.03880186, y: -0.04120001, z: -0.08033411}
+--- !u!23 &6163224854263066984 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8622489370873920656, guid: 763aa531c086f9d4fa9776ebefbf4e8a, type: 3}
+  m_PrefabInstance: {fileID: 6764107299013259800}
+  m_PrefabAsset: {fileID: 0}
