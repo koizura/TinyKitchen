@@ -11,7 +11,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public StoveManager stoveManager;
 
     private float mouseDownTime;
-
     [SerializeField]
     private float mouseDownDuration = 0.5f;
 
@@ -51,13 +50,16 @@ public class NewMonoBehaviourScript : MonoBehaviour
             if (isHit) {
                 GameObject objectHit = draggableHit.transform.gameObject;
                 GameObject objectDragged = draggedRigidbody.gameObject;
-                DraggableInfo panInfo = stoveManager.panObj.GetComponent<DraggableInfo>();
-                if (objectHit.Equals(stoveManager.panObj) && panInfo.CanContain(objectDragged)) {
-                    panInfo.Contain(objectDragged);
-                    Destroy(objectDragged.GetComponent<Rigidbody>());
-                    objectDragged.transform.SetParent(panInfo.transform);
+                if (stoveManager != null)
+                {
+                    DraggableInfo panInfo = stoveManager.panObj.GetComponent<DraggableInfo>();
+                    if (objectHit.Equals(stoveManager.panObj) && panInfo.CanContain(objectDragged))
+                    {
+                        panInfo.Contain(objectDragged);
+                        Destroy(objectDragged.GetComponent<Rigidbody>());
+                        objectDragged.transform.SetParent(panInfo.transform);
+                    }
                 }
-
             }
             draggedRigidbody = null;
             targetRotation = Vector3.zero;
@@ -86,6 +88,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 {
 
                 }
+                if (draggedRigidbody != null && draggedRigidbody.gameObject.CompareTag("Cookbook_Page"))
+                {
+                    draggedRigidbody.gameObject.GetComponent<TopPage>().FlipBook();
+                }
             }
         }
 
@@ -109,8 +115,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (Input.GetMouseButton(0) && draggedRigidbody) {
             // handle unsnapping
             if (draggedRigidbody.isKinematic) {
-                draggedRigidbody.isKinematic = false;
-                stoveManager.Detach(draggedRigidbody.gameObject);
+                if (!draggedRigidbody.CompareTag("Cookbook_Page"))
+                {
+                    draggedRigidbody.isKinematic = false;
+                    if (stoveManager != null)
+                    {
+                        stoveManager.Detach(draggedRigidbody.gameObject);
+                    }
+                }
             }
             draggedRigidbody.MovePosition(draggedRigidbody.position + 0.2f * (pointer.position - draggedRigidbody.position));
             draggedRigidbody.linearVelocity = (target - draggedRigidbody.position) * 10f;
