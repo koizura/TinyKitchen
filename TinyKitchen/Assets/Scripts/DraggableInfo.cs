@@ -74,6 +74,19 @@ public class DraggableInfo : MonoBehaviour
                 return true;
             }
         }
+        if (itemName == "knife" && targetName == "cutting board") {
+            if (target.containing.Count == 1) {
+                // itemName = "raw rice";
+                GetInfo(target.containing[0]).itemName = "cutting chicken";
+                GetInfo(target.containing[0]).cookTimeLeft = 3f;
+                target.containing.Add(gameObject);
+                Destroy(GetComponent<Rigidbody>());
+                transform.SetParent(targetObj.transform);
+                // SwapMesh(gameObject, 1);
+                Debug.Log("knife on cutting board, cutting");
+                return true;
+            }
+        }
         if (itemName == "bowl" && (targetName == "pan" || targetName == "pot")) {
             DraggableInfo pan = targetObj.GetComponent<DraggableInfo>();
             if (pan.containing.Count == 0) return false;

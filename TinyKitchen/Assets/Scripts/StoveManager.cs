@@ -38,7 +38,7 @@ public class StoveManager : MonoBehaviour
             if (!activeObjLeft && (stoveLObj.transform.position - panObj.transform.position).magnitude < snappingDistance) {
                 Rigidbody rb = panObj.GetComponent<Rigidbody>();
                 rb.isKinematic = true;
-                rb.MovePosition(stoveLObj.transform.position + Vector3.up * snappingDistance * 0.5f);
+                rb.MovePosition(stoveLObj.transform.position + Vector3.up * snappingDistance * 0.3f);
                 rb.MoveRotation(Quaternion.Euler(panObj.GetComponent<DraggableInfo>().pickupRotation));
                 activeObjLeft = panObj;
             }
@@ -46,7 +46,7 @@ public class StoveManager : MonoBehaviour
             if (!activeObjRight && (stoveRObj.transform.position - panObj.transform.position).magnitude < snappingDistance) {
                 Rigidbody rb = panObj.GetComponent<Rigidbody>();
                 rb.isKinematic = true;
-                rb.MovePosition(stoveRObj.transform.position + Vector3.up * snappingDistance * 0.5f);
+                rb.MovePosition(stoveRObj.transform.position + Vector3.up * snappingDistance * 0.3f);
                 rb.MoveRotation(Quaternion.Euler(panObj.GetComponent<DraggableInfo>().pickupRotation));
                 activeObjRight = panObj;
             }
@@ -55,7 +55,7 @@ public class StoveManager : MonoBehaviour
             if (!activeObjLeft && (stoveLObj.transform.position - potObj.transform.position).magnitude < snappingDistance) {
                 Rigidbody rb = potObj.GetComponent<Rigidbody>();
                 rb.isKinematic = true;
-                rb.MovePosition(stoveLObj.transform.position + 1f * snappingDistance * Vector3.up);
+                rb.MovePosition(stoveLObj.transform.position + 0.1f * snappingDistance * Vector3.up);
                 rb.MoveRotation(Quaternion.Euler(potObj.GetComponent<DraggableInfo>().pickupRotation));
                 activeObjLeft = potObj;
             }
@@ -63,7 +63,7 @@ public class StoveManager : MonoBehaviour
             if (!activeObjRight && (stoveRObj.transform.position - potObj.transform.position).magnitude < snappingDistance) {
                 Rigidbody rb = potObj.GetComponent<Rigidbody>();
                 rb.isKinematic = true;
-                rb.MovePosition(stoveRObj.transform.position + 1f * snappingDistance * Vector3.up);
+                rb.MovePosition(stoveRObj.transform.position + 0.1f * snappingDistance * Vector3.up);
                 rb.MoveRotation(Quaternion.Euler(potObj.GetComponent<DraggableInfo>().pickupRotation));
                 activeObjRight = potObj;
             }
@@ -88,9 +88,10 @@ public class StoveManager : MonoBehaviour
         if (!containerObj) return;
         DraggableInfo container = containerObj.GetComponent<DraggableInfo>();
         if (!container) return;
-        if (!(container.gameObject == activeObjLeft || container.gameObject == activeObjRight)) return;
+        if (!(container.gameObject == activeObjLeft || container.gameObject == activeObjRight || container.gameObject == activeObjBoard)) return;
         if (container.containing.Count == 0) return;
         DraggableInfo itemCooking = container.containing[0].GetComponent<DraggableInfo>();
+        
         itemCooking.cookTimeLeft -= Time.deltaTime;
         if (itemCooking.cookTimeLeft < 0) {
             if (itemCooking.itemName == "egg") {
@@ -102,6 +103,17 @@ public class StoveManager : MonoBehaviour
                 itemCooking.itemName = "cooked rice";
                 SwapMesh(itemCooking.gameObject, 2);
                 Debug.Log("raw rice has been cooked");
+
+            }
+            if (itemCooking.itemName == "cutting chicken") {
+                Debug.Log("chicken has been cut");
+                Instantiate(sprites[4], itemCooking.transform.position, itemCooking.transform.rotation);
+                Destroy(itemCooking.gameObject);
+                // itemCooking.itemName = "cut chicken";
+                // SwapMesh(itemCooking.gameObject, 4);
+                // itemCooking.gameObject.AddComponent<Rigidbody>();
+                // Destroy(itemCooking.GetComponent<Collider>());
+                // itemCooking.transform.parent = null;
 
             }
         }
