@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Talking_Sprite_Sheet.png.meta
+guid: 2d9a2c4f46b1865439c9ed142824a0da
+=======
+guid: 6164d8630a2474541b81bd1801692cd4
+>>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Talking_Sprite_Sheet.png.meta
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Talking_Sprite_Sheet.png.meta
+    enableMipMap: 1
+=======
+    enableMipMap: 0
+>>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Talking_Sprite_Sheet.png.meta
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Talking_Sprite_Sheet.png.meta
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+=======
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+>>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Talking_Sprite_Sheet.png.meta
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Talking_Sprite_Sheet.png.meta
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+=======
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+>>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Talking_Sprite_Sheet.png.meta
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Talking_Sprite_Sheet.png.meta
+    sprites: []
+=======
+    sprites:
+    - serializedVersion: 2
+      name: Talking_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1498
+        width: 2560
+        height: 1498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d91cb6d6e519eb428d88c45761e0ebf
+      internalID: 943516326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1498
+        width: 2560
+        height: 1498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3697031b27a1984d850632db50f732c
+      internalID: -1768884699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1498
+        width: 2560
+        height: 1498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f76642ae857fb845bf8455f8a2978d7
+      internalID: -2068590042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2560
+        height: 1498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4a64d57d0cfbb449f6d8d0a0347aff
+      internalID: 1051244660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 2560
+        height: 1498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21feced995f516741a3aa08adab3272f
+      internalID: -1285866733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talking_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 2560
+        height: 1498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9979270ec8a2484e8595e5e3e9eed7d
+      internalID: -117818483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+>>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Talking_Sprite_Sheet.png.meta
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Talking_Sprite_Sheet.png.meta
+    spriteID: 
+=======
+    spriteID: b5f185832d3d6fd4f8a96450325dbcdd
+>>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Talking_Sprite_Sheet.png.meta
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Talking_Sprite_Sheet.png.meta
+    nameFileIdTable: {}
+=======
+    nameFileIdTable:
+      Talking_Sprite_Sheet_0: 943516326
+      Talking_Sprite_Sheet_1: -1768884699
+      Talking_Sprite_Sheet_2: -2068590042
+      Talking_Sprite_Sheet_3: 1051244660
+      Talking_Sprite_Sheet_4: -1285866733
+      Talking_Sprite_Sheet_5: -117818483
+>>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Talking_Sprite_Sheet.png.meta
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

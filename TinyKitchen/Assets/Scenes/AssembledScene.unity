@@ -318,6 +318,7 @@ MonoBehaviour:
   - {fileID: 8710074876361581664, guid: 218701872a008e645ab86c856d2a3756, type: 3}
   - {fileID: 2635307661363329423, guid: 87a51242819fd47429e4d31c645304d1, type: 3}
   - {fileID: 3811090113742692064, guid: c05cbbad042a6d54098d6ef5183b3c1f, type: 3}
+  - {fileID: 1376553676646843475, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
 --- !u!4 &341897032
 Transform:
   m_ObjectHideFlags: 0
@@ -336,6 +337,63 @@ Transform:
   - {fileID: 666574563}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &401080298
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1376553676646843475, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_Name
+      value: Chicken Sliced Cooked Updated (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8557742
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.93163013
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.0541596
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752270696320032489, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f2ebea255257dc40ac407e887c1cb77, type: 3}
 --- !u!1 &579305087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,3 +2310,4 @@ SceneRoots:
   - {fileID: 1998299572}
   - {fileID: 341897032}
   - {fileID: 15776284}
+  - {fileID: 401080298}
