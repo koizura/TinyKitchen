@@ -48,8 +48,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
             target = surfaceHit.point;
         }
         // lerp to target
-        pointer.position += 0.1f * (target - pointer.position); 
-        
+        // pointer.position += 0.5f * (target - pointer.position); 
+        pointer.position = target;
         // if currently dragging an object, update object physics
         if (Input.GetMouseButton(0) && draggedRigidbody) {
             draggedRigidbody.MovePosition(draggedRigidbody.position + 0.2f * (pointer.position - draggedRigidbody.position));
