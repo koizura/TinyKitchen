@@ -10,6 +10,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private Vector3 targetRotation;
     public StoveManager stoveManager;
 
+    private float mouseDownTime;
+
+    [SerializeField]
+    private float mouseDownDuration = 0.5f;
+
     private InteractShading targetInteractShading;
     void Start()
     {
@@ -60,6 +65,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         // Check if should initiate new drag
         if (isHit && Input.GetMouseButtonDown(0)) {
+            mouseDownTime = Time.time;
             draggedRigidbody = draggableHit.rigidbody;
             DraggableInfo info = draggableHit.transform.gameObject.GetComponent<DraggableInfo>();
             if (info) {
@@ -71,6 +77,18 @@ public class NewMonoBehaviourScript : MonoBehaviour
                 targetInteractShading.setSelected(true);
             }
         }
+
+        if (isHit && Input.GetMouseButtonUp(0))
+        {
+            if (Time.time <= mouseDownTime + mouseDownDuration)
+            {
+                if (draggedRigidbody != null && draggedRigidbody.gameObject.CompareTag("Cookbook"))
+                {
+
+                }
+            }
+        }
+
     }
     void FixedUpdate()
     {
