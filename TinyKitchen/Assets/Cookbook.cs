@@ -1,11 +1,9 @@
 using UnityEngine;
 
-public class TopPage : MonoBehaviour
+public class Cookbook : MonoBehaviour
 {
     [SerializeField]
-    private bool dir;
-    [SerializeField]
-    private FlipCookbook flipCookbook;
+    private GameObject openBook;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,13 +19,14 @@ public class TopPage : MonoBehaviour
             bool isHit = Physics.Raycast(mouseRay.origin, mouseRay.direction, out RaycastHit draggableHit, 20.0f);
             if (isHit && draggableHit.transform.gameObject == gameObject)
             {
-                FlipBook();
+                SpawnBook();
             }
         }
     }
 
-    public void FlipBook()
+    public void SpawnBook()
     {
-        flipCookbook.Flip(dir);
+        Instantiate(openBook);
+        Destroy(gameObject);
     }
 }

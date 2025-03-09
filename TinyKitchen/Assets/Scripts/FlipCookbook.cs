@@ -26,7 +26,7 @@ public class FlipCookbook : MonoBehaviour
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             bool isHit = Physics.Raycast(mouseRay.origin, mouseRay.direction, out RaycastHit draggableHit, 20.0f);
-            if (isHit && draggableHit.transform.gameObject != gameObject)
+            if (isHit && (draggableHit.transform.gameObject != gameObject && draggableHit.transform.gameObject != leftPage && draggableHit.transform.gameObject != rightPage))
             {
                 CloseBook();
             }

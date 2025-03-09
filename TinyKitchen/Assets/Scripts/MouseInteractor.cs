@@ -80,21 +80,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
             }
         }
 
-        if (isHit && Input.GetMouseButtonUp(0))
-        {
-            if (Time.time <= mouseDownTime + mouseDownDuration)
-            {
-                if (draggedRigidbody != null && draggedRigidbody.gameObject.CompareTag("Cookbook"))
-                {
-
-                }
-                if (draggedRigidbody != null && draggedRigidbody.gameObject.CompareTag("Cookbook_Page"))
-                {
-                    draggedRigidbody.gameObject.GetComponent<TopPage>().FlipBook();
-                }
-            }
-        }
-
     }
     void FixedUpdate()
     {
