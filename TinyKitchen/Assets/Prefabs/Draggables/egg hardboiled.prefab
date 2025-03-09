@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       propertyPath: m_LocalScale.x
-      value: 73.914536
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       propertyPath: m_LocalScale.y
-      value: 73.914536
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       propertyPath: m_LocalScale.z
-      value: 73.914536
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 80307a55909bc3c42b12517cba133804, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -67,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       propertyPath: m_Name
       value: egg hardboiled
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80307a55909bc3c42b12517cba133804, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -77,10 +85,13 @@ PrefabInstance:
       addedObject: {fileID: 6668918771505996528}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5238167137347328352}
+      addedObject: {fileID: 368823548660240527}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 80307a55909bc3c42b12517cba133804, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 368823548660240527}
+      addedObject: {fileID: -7727942456599061097}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 80307a55909bc3c42b12517cba133804, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -9168079949275988219}
   m_SourcePrefab: {fileID: 100100000, guid: 80307a55909bc3c42b12517cba133804, type: 3}
 --- !u!1 &7744467779446696568 stripped
 GameObject:
@@ -88,22 +99,6 @@ GameObject:
   m_PrefabInstance: {fileID: 7473875006002157353}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &6668918771505996528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7744467779446696568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9393fbc75d235842a35c1ba1b203b84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isHovering: 0
-  isSelected: 0
-  hoverOutlineColor: {r: 0, g: 1, b: 0, a: 1}
-  selectOutlineColor: {r: 0, g: 0, b: 1, a: 1}
---- !u!114 &5238167137347328352
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,3 +141,41 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!64 &-7727942456599061097
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744467779446696568}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6308188546630111274, guid: 80307a55909bc3c42b12517cba133804, type: 3}
+--- !u!114 &-9168079949275988219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7744467779446696568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab4527020d3848b2871cbe1b4dde5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: egg
+  pickupRotation: {x: 0, y: 0, z: 0}
+  containing: []
+  cookTimeLeft: 3

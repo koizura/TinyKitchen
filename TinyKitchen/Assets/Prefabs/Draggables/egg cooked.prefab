@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: egg cooked
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4dda1c30361ac0541b68aed86e162eca, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79,6 +83,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4dda1c30361ac0541b68aed86e162eca, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1634693537065774947}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4dda1c30361ac0541b68aed86e162eca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4633969700252724078}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4dda1c30361ac0541b68aed86e162eca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8085023837672860718}
   m_SourcePrefab: {fileID: 100100000, guid: 4dda1c30361ac0541b68aed86e162eca, type: 3}
 --- !u!1 &9116140292127564416 stripped
 GameObject:
@@ -101,3 +111,46 @@ MonoBehaviour:
   isSelected: 0
   hoverOutlineColor: {r: 0, g: 1, b: 0, a: 1}
   selectOutlineColor: {r: 0, g: 0, b: 1, a: 1}
+--- !u!114 &4633969700252724078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9116140292127564416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab4527020d3848b2871cbe1b4dde5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: cooked egg
+  pickupRotation: {x: 0, y: 0, z: 0}
+  containing: []
+  cookTimeLeft: 0
+--- !u!54 &-8085023837672860718
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9116140292127564416}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
