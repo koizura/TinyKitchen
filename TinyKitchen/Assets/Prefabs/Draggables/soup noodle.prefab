@@ -73,7 +73,20 @@ PrefabInstance:
       value: soup noodle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -5627047780264143838, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: 1244627639875620344, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -31417337342440820, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -1670457628420609780, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: 1627275504663916692, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -6782692809249652333, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: 2961151362468809340, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -9138728826078244813, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: 6750787616360382267, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -2496294075515778721, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -7941476466228760141, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -5322084451947548077, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
+    - {fileID: -4452268735315565167, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6f5f2c49b6c2f04a9315770ae125e62, type: 3}
