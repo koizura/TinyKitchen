@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 729600190}
   - component: {fileID: 729600189}
   - component: {fileID: 729600188}
+  - component: {fileID: 729600192}
   m_Layer: 0
   m_Name: TestSphere
   m_TagString: Untagged
@@ -227,6 +228,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729600192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729600187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9393fbc75d235842a35c1ba1b203b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHovering: 0
+  isSelected: 0
+  hoverOutlineColor: {r: 0, g: 1, b: 0, a: 1}
+  selectOutlineColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &1346868285
 GameObject:
   m_ObjectHideFlags: 0
