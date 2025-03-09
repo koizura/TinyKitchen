@@ -55,13 +55,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
                     DraggableInfo draggedInfo = objectDragged.GetComponent<DraggableInfo>();
                     draggedInfo.MergeInto(objectHit);
                 }
-                // DraggableInfo panInfo = stoveManager.panObj.GetComponent<DraggableInfo>();
-                // if (objectHit.Equals(stoveManager.panObj) && panInfo.CanContain(objectDragged))
-                // {
-                //     panInfo.Contain(objectDragged);
-                //     Destroy(objectDragged.GetComponent<Rigidbody>());
-                //     objectDragged.transform.SetParent(panInfo.transform);
-                // }
                 
             }
             draggedRigidbody = null;
