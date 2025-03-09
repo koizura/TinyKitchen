@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Burp_Sprite_Sheet.png.meta
 guid: 58407b76413e3064d9b086ef24068aa8
-=======
-guid: 3ba498476d682994e984bf09ee6b0f73
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Burp_Sprite_Sheet.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Burp_Sprite_Sheet.png.meta
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Burp_Sprite_Sheet.png.meta
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -45,15 +37,6 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Burp_Sprite_Sheet.png.meta
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-=======
     wrapU: 1
     wrapV: 1
     wrapW: 0
@@ -61,7 +44,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Burp_Sprite_Sheet.png.meta
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,15 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Burp_Sprite_Sheet.png.meta
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
-=======
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Burp_Sprite_Sheet.png.meta
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -87,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,9 +108,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Burp_Sprite_Sheet.png.meta
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: Burp_Sprite_Sheet_0
@@ -152,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0260a8054a543de4fb8a7a26f9f5965a
-      internalID: -1953253360
+      spriteID: f57fb52038a92ec4ab8ad3eee290dff9
+      internalID: -2112647668
       vertices: []
       indices: 
       edges: []
@@ -174,22 +147,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91b57e9b5df40474681febcb4dd62bbf
-      internalID: -529983094
+      spriteID: c8c0955828fdb1241afea511bf701360
+      internalID: 1839013120
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Burp_Sprite_Sheet.png.meta
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Burp_Sprite_Sheet.png.meta
-    spriteID: 
-=======
-    spriteID: 3f8ca938f8119594ea1aea23b7ac0fde
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Burp_Sprite_Sheet.png.meta
+    spriteID: 9b5b4787a26ffb245b53bb8a8f7e3fa7
     internalID: 0
     vertices: []
     indices: 
@@ -198,13 +166,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Burp_Sprite_Sheet.png.meta
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      Burp_Sprite_Sheet_0: -1953253360
-      Burp_Sprite_Sheet_1: -529983094
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Burp_Sprite_Sheet.png.meta
+      Burp_Sprite_Sheet_0: -2112647668
+      Burp_Sprite_Sheet_1: 1839013120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

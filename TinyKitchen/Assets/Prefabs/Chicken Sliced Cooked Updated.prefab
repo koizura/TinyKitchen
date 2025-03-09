@@ -121,6 +121,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3eccb36e2aef54943b617916fb6e34a3, type: 3}
       insertIndex: -1
       addedObject: {fileID: -3289717276021652506}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3eccb36e2aef54943b617916fb6e34a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2908388392971195241}
     - targetCorrespondingSourceObject: {fileID: -4813999373916385029, guid: 3eccb36e2aef54943b617916fb6e34a3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1564522066421375411}
@@ -173,6 +176,22 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &-2908388392971195241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376553676646843475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9393fbc75d235842a35c1ba1b203b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHovering: 0
+  isSelected: 0
+  hoverOutlineColor: {r: 0, g: 1, b: 0, a: 1}
+  selectOutlineColor: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &2516057006616668665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4813999373916385029, guid: 3eccb36e2aef54943b617916fb6e34a3, type: 3}

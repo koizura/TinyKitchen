@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Idle_Sprite_Sheet.png.meta
 guid: 6c76382a4c120ce4dae583dfaf7e097a
-=======
-guid: 083d3a617c11afc498252035555075a5
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Idle_Sprite_Sheet.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Idle_Sprite_Sheet.png.meta
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Idle_Sprite_Sheet.png.meta
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -45,15 +37,6 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Idle_Sprite_Sheet.png.meta
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-=======
     wrapU: 1
     wrapV: 1
     wrapW: 0
@@ -61,7 +44,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Idle_Sprite_Sheet.png.meta
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,15 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Idle_Sprite_Sheet.png.meta
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
-=======
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Idle_Sprite_Sheet.png.meta
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -87,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,9 +108,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Idle_Sprite_Sheet.png.meta
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: Idle_Sprite_Sheet_0
@@ -152,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b6496112e2833429bce082d01de74c
-      internalID: -1320859929
+      spriteID: eff8d463a552fdd4398a21f469c76485
+      internalID: 1542339717
       vertices: []
       indices: 
       edges: []
@@ -174,8 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcbf93c5f614f6647a92811188bba258
-      internalID: 2002703453
+      spriteID: 95e02de743cb9454da42f46beedfff1d
+      internalID: -1625723138
       vertices: []
       indices: 
       edges: []
@@ -196,22 +169,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1425e35340e5d6d4ab1757105ac73de0
-      internalID: 661858790
+      spriteID: 4bab2eea0a8afa6498766d958d669eab
+      internalID: 1382744641
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Idle_Sprite_Sheet.png.meta
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Idle_Sprite_Sheet.png.meta
-    spriteID: 
-=======
-    spriteID: c695e4a1f7576ae43bd562ab584bed4b
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Idle_Sprite_Sheet.png.meta
+    spriteID: 11b29c109ed6991478c630948afdd6fa
     internalID: 0
     vertices: []
     indices: 
@@ -220,14 +188,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Idle_Sprite_Sheet.png.meta
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      Idle_Sprite_Sheet_0: -1320859929
-      Idle_Sprite_Sheet_1: 2002703453
-      Idle_Sprite_Sheet_2: 661858790
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Idle_Sprite_Sheet.png.meta
+      Idle_Sprite_Sheet_0: 1542339717
+      Idle_Sprite_Sheet_1: -1625723138
+      Idle_Sprite_Sheet_2: 1382744641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

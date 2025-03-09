@@ -1,20 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Eating_Sprite_Sheet.png.meta
 guid: 9f525b6d18acdc14f8754fae5c23a997
-=======
-guid: d663bd64c37ea8049aa4133c5decf4e8
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Eating_Sprite_Sheet.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Eating_Sprite_Sheet.png.meta
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Eating_Sprite_Sheet.png.meta
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -45,15 +37,6 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Eating_Sprite_Sheet.png.meta
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-=======
     wrapU: 1
     wrapV: 1
     wrapW: 0
@@ -61,7 +44,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Eating_Sprite_Sheet.png.meta
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,15 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Eating_Sprite_Sheet.png.meta
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
-=======
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Eating_Sprite_Sheet.png.meta
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -87,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,9 +108,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Eating_Sprite_Sheet.png.meta
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: Eating_Sprite_Sheet_0
@@ -145,15 +118,15 @@ TextureImporter:
         width: 2560
         height: 1498
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93d96502bc24cff488565b25a1668679
-      internalID: 2006816988
+      spriteID: eaeb5445979e54145b7280afa63aec5f
+      internalID: 361020084
       vertices: []
       indices: 
       edges: []
@@ -167,37 +140,15 @@ TextureImporter:
         width: 2560
         height: 1498
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a542fc0c46e3f574882b77c7a0b43e3b
-      internalID: -1789477260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eating_Sprite_Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 5120
-        y: 1498
-        width: 2560
-        height: 1498
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51224f5814e16464aa3a707f4847464d
-      internalID: 2079530614
+      spriteID: cf889782346db5d4493eb4de3394eda8
+      internalID: -1969410600
       vertices: []
       indices: 
       edges: []
@@ -206,20 +157,42 @@ TextureImporter:
       name: Eating_Sprite_Sheet_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5120
+        y: 1498
         width: 2560
         height: 1498
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ddacbd9f64c37b409f8d3065b6ca394
-      internalID: 1848947018
+      spriteID: 5e3afff94696e034eb12de137ba941e9
+      internalID: -991566460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eating_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2560
+        height: 1498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1858e2c2876cf534ba8b8fd1589b932c
+      internalID: -1985352809
       vertices: []
       indices: 
       edges: []
@@ -229,19 +202,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2560
-        y: 0
+        y: 7
         width: 2560
         height: 1498
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae18e823fe0cf0c4880d997056abdd02
-      internalID: -1256225080
+      spriteID: cde53953bb32a4e42bb4bcddcc1d9683
+      internalID: -496454775
       vertices: []
       indices: 
       edges: []
@@ -255,29 +228,24 @@ TextureImporter:
         width: 2560
         height: 1498
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d488844277966124ab2641bc0a78a068
-      internalID: -91351892
+      spriteID: 26ebeba9253faf649b22b5ceb312893a
+      internalID: 1199628998
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Eating_Sprite_Sheet.png.meta
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Eating_Sprite_Sheet.png.meta
-    spriteID: 
-=======
-    spriteID: b16744f1db4fd894881b05068b1df173
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Eating_Sprite_Sheet.png.meta
+    spriteID: 188aacaae255db947a6ad259e5a1a5c3
     internalID: 0
     vertices: []
     indices: 
@@ -286,17 +254,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< HEAD:TinyKitchen/Assets/Assets/Textures/Demon/Eating_Sprite_Sheet.png.meta
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      Eating_Sprite_Sheet_0: 2006816988
-      Eating_Sprite_Sheet_1: -1789477260
-      Eating_Sprite_Sheet_2: 2079530614
-      Eating_Sprite_Sheet_3: 1848947018
-      Eating_Sprite_Sheet_4: -1256225080
-      Eating_Sprite_Sheet_5: -91351892
->>>>>>> 2779f5ce0486bd9855e61b368cfab7c473116ac7:TinyKitchen/Assets/Assets/2D_Assets/Demon 1/Eating_Sprite_Sheet.png.meta
+      Eating_Sprite_Sheet_0: 361020084
+      Eating_Sprite_Sheet_1: -1969410600
+      Eating_Sprite_Sheet_2: -1985352809
+      Eating_Sprite_Sheet_3: -991566460
+      Eating_Sprite_Sheet_4: -496454775
+      Eating_Sprite_Sheet_5: 1199628998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

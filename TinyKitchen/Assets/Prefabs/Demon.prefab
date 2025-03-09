@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8339782671698132910}
   - component: {fileID: 2670486945293027220}
-  m_Layer: 0
+  - component: {fileID: 4019405919686878391}
+  m_Layer: 8
   m_Name: Idle_Demon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,12 +82,34 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 11.24}
+  m_Size: {x: 25.608547, y: 14.9800005}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4019405919686878391
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291060300960077130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 246721f40f67a1c4a8a3e5f1d18b54a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4463265527127597683
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8338359347066970730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IngredientSpawnLoc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +151,8 @@ GameObject:
   m_Component:
   - component: {fileID: 375239341688772328}
   - component: {fileID: 7319643159764340639}
-  m_Layer: 0
+  - component: {fileID: 8876008100071307731}
+  m_Layer: 8
   m_Name: Demon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +169,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.52, y: 1.17, z: 3.0363362}
-  m_LocalScale: {x: 0.25820702, y: 0.25820702, z: 0.25820702}
+  m_LocalScale: {x: 0.41726947, y: 0.41726947, z: 0.41726947}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8339782671698132910}
@@ -175,3 +199,43 @@ MonoBehaviour:
   - {fileID: 4001783678017523971, guid: c588d3c564be2ec44a52e8e4e13ca519, type: 3}
   - {fileID: 4146874958584921683, guid: 52c92d49f62eb6043bb96a038698fe36, type: 3}
   shootForce: 10
+  animator: {fileID: 4019405919686878391}
+  isTalking: 0
+  isAngry: 0
+  mouseInteractor: {fileID: 0}
+  desiredItemList:
+  - chicken dish
+  - egg dish
+  - rice dish
+  - rice egg dish
+  desiredItem: 
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  spriteList:
+  - {fileID: 21300000, guid: d2448532a483280458a7fc1a34c71978, type: 3}
+  - {fileID: 21300000, guid: 071913cbb83955843bbb6629ac3befa8, type: 3}
+  - {fileID: 21300000, guid: 8543f6a74cfa6f54490f76c1ab03364f, type: 3}
+  - {fileID: 21300000, guid: 8d4d1d017703f2244b1ead1a8381bfed, type: 3}
+  dialogueRenderer: {fileID: 0}
+--- !u!65 &8876008100071307731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761448314252985300}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.4247684, y: 5.691387, z: 1.4283196}
+  m_Center: {x: 0.57339233, y: 0.061911084, z: -0.21415974}

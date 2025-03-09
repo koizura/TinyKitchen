@@ -290,33 +290,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!1 &232878755 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1291060300960077130, guid: 33b0159ee3707ef42a2528e9bf9a82c7, type: 3}
-  m_PrefabInstance: {fileID: 5250871057050519544}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &232878758
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232878755}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 246721f40f67a1c4a8a3e5f1d18b54a7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &405065400
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointer: {fileID: 636499062}
+  draggedRigidbody: {fileID: 0}
   stoveManager: {fileID: 0}
   mouseDownDuration: 0.3
 --- !u!1 &636499059
@@ -1034,17 +1008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Demon
       objectReference: {fileID: 0}
-    - target: {fileID: 7319643159764340639, guid: 33b0159ee3707ef42a2528e9bf9a82c7, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 232878758}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1291060300960077130, guid: 33b0159ee3707ef42a2528e9bf9a82c7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 232878758}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33b0159ee3707ef42a2528e9bf9a82c7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
