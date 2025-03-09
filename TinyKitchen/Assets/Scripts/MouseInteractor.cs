@@ -9,6 +9,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private Rigidbody draggedRigidbody; // Rigidbody of the object being dragged  
     private Vector3 targetRotation;
     public StoveManager stoveManager;
+
+    private InteractShading targetInteractShading;
     void Start()
     {
         
@@ -19,7 +21,24 @@ public class NewMonoBehaviourScript : MonoBehaviour
         // ray cast on any draggable item     
         Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         LayerMask draggableMask = LayerMask.GetMask("Draggable");
+
         bool isHit = Physics.Raycast(mouseRay.origin, mouseRay.direction, out RaycastHit draggableHit, 20.0f, draggableMask);
+
+        targetInteractShading = draggableHit.transform?.gameObject?.GetComponent<InteractShading>();
+        if (isHit && targetInteractShading && !targetInteractShading.isHovering)
+        {
+            targetInteractShading.setHovering(true);
+        }
+
+        if (draggedRigidbody)
+        {
+            InteractShading interactShading = draggedRigidbody.GetComponent<InteractShading>();
+            if (interactShading != null )
+            {
+                interactShading.setHovering(true);
+                interactShading.setSelected(true);
+            }
+        }
 
         // reset if mouse stops dragging an object
         if (draggedRigidbody && (Input.GetMouseButtonUp(0) || !Input.GetMouseButton(0))) {
@@ -45,6 +64,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
             DraggableInfo info = draggableHit.transform.gameObject.GetComponent<DraggableInfo>();
             if (info) {
                 targetRotation = info.pickupRotation;
+            }
+
+            if (targetInteractShading)
+            {
+                targetInteractShading.setSelected(true);
             }
         }
     }

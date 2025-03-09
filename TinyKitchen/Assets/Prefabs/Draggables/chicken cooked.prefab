@@ -71,5 +71,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e9ee942b51bceeb46adb585e9779b753, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4570524942810622884}
   m_SourcePrefab: {fileID: 100100000, guid: e9ee942b51bceeb46adb585e9779b753, type: 3}
+--- !u!1 &8059685778454897875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e9ee942b51bceeb46adb585e9779b753, type: 3}
+  m_PrefabInstance: {fileID: 7140642281855342978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4570524942810622884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059685778454897875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9393fbc75d235842a35c1ba1b203b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHovering: 0
+  isSelected: 0
+  hoverOutlineColor: {r: 0, g: 1, b: 0, a: 1}
+  selectOutlineColor: {r: 0, g: 0, b: 1, a: 1}

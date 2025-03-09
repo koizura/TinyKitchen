@@ -1,16 +1,17 @@
 using System;
+using System.Linq;
 using System.Xml;
 using UnityEngine;
 
 public class InteractShading : MonoBehaviour
 {
     [SerializeField]
-    private bool isHovering = false;
+    public bool isHovering = false;
     [SerializeField]
-    private bool isSelected = false;
+    public bool isSelected = false;
 
-    private Material material;
-    private Material originalMaterial;
+    private Material[] materials;
+    private Material[] originalMaterials;
     private MeshRenderer meshRenderer;
 
     [SerializeField]
@@ -18,29 +19,47 @@ public class InteractShading : MonoBehaviour
     [SerializeField]
     private Color selectOutlineColor = Color.blue;
 
+    private bool isOriginal = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
-        material = meshRenderer.material;
-        originalMaterial = new Material(material);
+        if (meshRenderer != null)
+        {
+            materials = meshRenderer.materials;
+            originalMaterials = new Material[materials.Length];
+            for (int i = 0; i < materials.Length; i++)
+            {
+                originalMaterials[i] = new Material(materials[i]);
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!isOriginal)
+        {
+            isHovering = false;
+            isSelected = false;
+            changeShader();
+            isOriginal = true;
+        }
+        changeShader();
     }
 
     public void setHovering(bool isHovering)
     {
         this.isHovering = isHovering;
+        isOriginal = false;
         changeShader();
     }
 
     public void setSelected(bool isSelected)
     {
         this.isSelected = isSelected;
+        isOriginal = false;
         changeShader();
     }
 
@@ -48,23 +67,34 @@ public class InteractShading : MonoBehaviour
     {
         if (isSelected)
         {
-            meshRenderer.material.SetColor("_Outline_Color", hoverOutlineColor);
+            for (int i = 0; i < materials.Length; i++)
+            {
+                meshRenderer.materials[i].SetColor("_Outline_Color", hoverOutlineColor);
+            }
         }
         else if (isHovering)
         {
-            meshRenderer.material.SetColor("_Outline_Color", selectOutlineColor);
+            for (int i = 0; i < materials.Length; i++)
+            {
+                meshRenderer.materials[i].SetColor("_Outline_Color", selectOutlineColor);
+            }
         }
-        else if (originalMaterial)
+        else if (originalMaterials != null && materials.Length != 0 && originalMaterials.Length != 0)
         {
-            meshRenderer.material = new Material(originalMaterial);
+            for (int i = 0; i < materials.Length; i++)
+            {
+                materials[i] = new Material(originalMaterials[i]);
+                meshRenderer.materials = materials;
+            }
         }
     }
 
     private void OnValidate()
     {
-        if (material && originalMaterial)
+        if (materials != null && originalMaterials != null)
         {
             changeShader();
         }
     }
+
 }
